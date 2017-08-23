@@ -4,12 +4,14 @@ var initGulpTasks = require('react-component-gulp-tasks');
 var taskConfig = {
 
 	component: {
-		name: 'Select',
+		name: 'index',
 		dependencies: [
 			'classnames',
 			'react-input-autosize',
 			'react',
-			'react-dom'
+			'react-dom',
+			'create-react-class',
+			'prop-types'
 		],
 		less: {
 			path: 'less',
