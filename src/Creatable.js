@@ -130,9 +130,6 @@ class CreatableSelect extends React.Component {
 			shouldKeyDownEventCreateNewOption({ keyCode: event.keyCode })
 		) {
 			this.createNewOption();
-
-			// Prevent decorated Select from doing anything additional with this keyDown event
-			event.preventDefault();
 		} else if (onInputKeyDown) {
 			onInputKeyDown(event);
 		}

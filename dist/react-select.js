@@ -560,9 +560,6 @@ var Creatable = (0, _createReactClass2['default'])({
 
 		if (focusedOption && focusedOption === this._createPlaceholderOption && shouldKeyDownEventCreateNewOption({ keyCode: event.keyCode })) {
 			this.createNewOption();
-
-			// Prevent decorated Select from doing anything additional with this keyDown event
-			event.preventDefault();
 		} else if (onInputKeyDown) {
 			onInputKeyDown(event);
 		}
